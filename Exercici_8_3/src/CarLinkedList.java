@@ -31,8 +31,7 @@ public class CarLinkedList {
 		// 6: Replace Seat Ibiza for a Seat Mii
 		for (int i = 0; i < llistaCotxes.size(); i++) {
 			if (llistaCotxes.get(i).getMarca() == "Seat" && llistaCotxes.get(i).getModel() == "Ibiza") {
-				int posicio = llistaCotxes.indexOf(i);
-				llistaCotxes.set(posicio, new Cotxe("Seat", "Mii", 1000, 3));
+				llistaCotxes.set(i, new Cotxe("Seat", "Mii", 1000, 3));
 			} 
 		}
 		
@@ -40,7 +39,10 @@ public class CarLinkedList {
 		llistaCotxes.removeFirst();
 		
 		// 8: Which position has the Hyundai?
-		
+		for (int i = 0; i < llistaCotxes.size(); i++) {
+			if (llistaCotxes.get(i).getMarca() == "Hyundai") {
+				System.out.println("La posició del Hyundai és: " + i);
+			}
+		}
 	}
-
 }
