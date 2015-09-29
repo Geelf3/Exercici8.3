@@ -16,12 +16,12 @@ public class CarLinkedList {
 		
 		// 3: Add 2 cars
 		// a) This one at the beginning
-		llistaCotxes.addFirst(new Cotxe("Hyundai", "Atos", 1500, 3));
+		llistaCotxes.offerFirst(new Cotxe("Hyundai", "Atos", 1500, 3));
 		// b) This one at the end
 		llistaCotxes.addLast(new Cotxe("Ford", "Focus", 2000, 4));
 		
 		// 4: We try to add a duplicate
-		if (llistaCotxes.add(new Cotxe("Hyundai", "Atos", 1500, 3))) {
+		if (llistaCotxes.offer(new Cotxe("Hyundai", "Atos", 1500, 3))) {
 			System.out.println("S'ha pogut afegir el duplicat");
 		}
 		
