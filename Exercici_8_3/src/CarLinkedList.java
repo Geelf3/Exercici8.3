@@ -18,7 +18,7 @@ public class CarLinkedList {
 		// a) This one at the beginning
 		llistaCotxes.offerFirst(new Cotxe("Hyundai", "Atos", 1500, 3));
 		// b) This one at the end
-		llistaCotxes.addLast(new Cotxe("Ford", "Focus", 2000, 4));
+		llistaCotxes.offerLast(new Cotxe("Ford", "Focus", 2000, 4));
 		
 		// 4: We try to add a duplicate
 		if (llistaCotxes.offer(new Cotxe("Hyundai", "Atos", 1500, 3))) {

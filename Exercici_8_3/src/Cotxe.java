@@ -61,4 +61,5 @@ public class Cotxe {
 	public double calculaPotFis() {
 		return (0.08 * this.cilindres * Math.pow((this.cilindrada / this.cilindres), 0.6));
 	}
+		
 }
